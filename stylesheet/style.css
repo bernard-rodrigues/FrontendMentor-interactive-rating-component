@@ -1,0 +1,36 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+body main {
+  padding: 24px 26px 32px 26px;
+  width: 87.2%;
+  background-image: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(215, 27%, 12%));
+}
+body main h1 {
+  color: hsl(0, 0%, 100%);
+}
+body main p {
+  color: hsl(216, 12%, 54%);
+}
+body main #rating {
+  display: flex;
+  justify-content: space-between;
+}
+body main #rating div {
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(213, 19%, 18%);
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+}
+body main input {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  height: 46px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

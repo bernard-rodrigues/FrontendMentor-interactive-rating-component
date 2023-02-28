@@ -1,0 +1,52 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+$mediumDarkBlue: hsl(215, 27%, 12%);
+
+$fontBase: 15px;
+$overpass: 'Overpass', sans-serif;
+
+body{
+    background-color: $veryDarkBlue;
+    font-family: $overpass;
+
+    main{
+        padding: 24px 26px 32px 26px;
+        width: 87.2%;
+        background-image: radial-gradient(circle at top, $darkBlue, $mediumDarkBlue);
+
+        h1{
+            color: $white;
+        }
+        
+        p{
+            color: $mediumGrey;
+        }
+
+        #rating{
+            display: flex;
+            justify-content: space-between;
+            
+            div{
+                color: $mediumGrey;
+                background-color: $darkBlue;
+                height: 42px;
+                width: 42px;
+                border-radius: 50%;
+            }
+        }
+
+        input{
+            background-color: $orange;
+            color: $white;
+            border: none;
+            height: 46px;
+            width: 100%;
+            border-radius: 25px;
+        }
+    }
+}
