@@ -1,17 +1,45 @@
 body {
   background-color: hsl(216, 12%, 8%);
   font-family: "Overpass", sans-serif;
+  position: relative;
 }
 body main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 360px;
   padding: 24px 26px 32px 26px;
   width: 87.2%;
+  border-radius: 15px;
   background-image: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(215, 27%, 12%));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main #star-container {
+  height: 40px;
+  width: 40px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #star-container img {
+  height: auto;
+  width: 13px;
 }
 body main h1 {
   color: hsl(0, 0%, 100%);
+  font-size: 23.5px;
+  transform: translateY(-2px);
 }
 body main p {
-  color: hsl(216, 12%, 54%);
+  color: hsl(217, 12%, 63%);
+  font-size: 13.9px;
+  transform: translateY(-12px);
+  line-height: 23px;
 }
 body main #rating {
   display: flex;
@@ -23,14 +51,31 @@ body main #rating div {
   height: 42px;
   width: 42px;
   border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  transform: translateY(-4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #rating div.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+body main #rating div span {
+  transform: translateY(1px);
 }
 body main input {
   background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
+  color: hsla(0, 0%, 100%, 0.8);
   border: none;
   height: 46px;
   width: 100%;
   border-radius: 25px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
