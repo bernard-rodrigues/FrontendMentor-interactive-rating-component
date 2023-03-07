@@ -104,4 +104,32 @@ body{
             letter-spacing: 2px;
         }
     }
+
+    // SEPARADOR
+
+    #thank-you{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            width: 145px;
+            height: auto;
+            margin-top: 9px;
+        }
+
+        #selection{
+            color: $orange;
+            background-color: $darkBlue;
+            padding: 5px 12px 3px 12px;
+            font-size: 14px;
+            border-radius: 25px;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
 }
