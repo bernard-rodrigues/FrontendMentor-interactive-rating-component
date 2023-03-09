@@ -1,3 +1,23 @@
+@keyframes fadeOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+}
+@keyframes fadeInFromLeft {
+  from {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 body {
   background-color: hsl(216, 12%, 8%);
   font-family: "Overpass", sans-serif;
@@ -13,9 +33,15 @@ body main {
   width: 87.2%;
   border-radius: 15px;
   background-image: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(215, 27%, 12%));
+}
+body main #rating-container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+body main #rating-container.animate {
+  animation: fadeOutToRight 0.25s ease-in forwards;
 }
 body main #star-container {
   height: 40px;
@@ -79,15 +105,20 @@ body main input {
 }
 body #thank-you {
   height: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+body #thank-you.animate {
+  animation-delay: 0.25s;
+  animation: fadeInFromLeft 0.25s ease-in forwards;
 }
 body #thank-you img {
   width: 145px;
   height: auto;
   margin-top: 9px;
+  margin-bottom: 25px;
 }
 body #thank-you #selection {
   color: hsl(25, 97%, 53%);
@@ -95,9 +126,12 @@ body #thank-you #selection {
   padding: 5px 12px 3px 12px;
   font-size: 14px;
   border-radius: 25px;
+  margin-bottom: 8px;
 }
 body #thank-you p {
   text-align: center;
+  transform: translateY(-6px);
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
