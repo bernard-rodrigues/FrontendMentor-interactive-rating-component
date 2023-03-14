@@ -1,4 +1,11 @@
 let rating = 0;
+const rating_messages = [
+    "We're sorry...",
+    "Well... ok.",
+    "Thanks!",
+    "Thank you!",
+    "WOW! THANK YOU!"
+]
 
 //Função que monitora o click sobre os ratings
 $('#rating div').on('click', function() {
@@ -21,6 +28,7 @@ $('#submit').on('click', function(){
         alert('Please, select your rating!');
     }else{
         //Escreve a nota armazenada na variável dentro do span
+        $('#thank-you h1').text(rating_messages[rating - 1]);
         $('#selection span').text(rating);
 
         //Adiciona as classes de animação
