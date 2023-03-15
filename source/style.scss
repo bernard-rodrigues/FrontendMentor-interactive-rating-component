@@ -195,7 +195,7 @@ body{
         }
     }
 
-    // SEPARADOR
+    // SEPARATOR
 
     #thank-you{
         &.animate{
@@ -254,6 +254,22 @@ body{
                 transform: translateY(-16px);
                 line-height: 23px;
             }
+        }
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        color: $white;
+        background-image: linear-gradient(to right, $darkBlue, $mediumDarkBlue);
+        padding: 3px;
+
+        a{
+            color: $orange;
+            text-decoration: none;
         }
     }
 }
