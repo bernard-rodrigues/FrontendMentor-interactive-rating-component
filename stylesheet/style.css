@@ -210,6 +210,7 @@ body footer {
   color: hsl(0, 0%, 100%);
   background-image: linear-gradient(to right, hsl(213, 19%, 18%), hsl(215, 27%, 12%));
   padding: 3px;
+  letter-spacing: 0.5px;
 }
 body footer a {
   color: hsl(25, 97%, 53%);
